@@ -22,3 +22,26 @@
 
 - Na aba Usage é retornada informações referentes ao uso do serviço em relação ao período de faturamento.
 ![alt text](https://github.com/Beevi-Cognitive/PythonFireBaseAuthentication/blob/master/images/firebase5.png?raw=true)
+
+# Como rodar
+- Abra o notebook e execute o primeiro bloco de comandos para a instalação do pyrebase e suas dependências, libs necessárias para a comunicação com o Firebase;
+
+- No segunco bloco de código será feita a instalação da lib dotenv, o que vai nos permitir esconder do github informações de credenciais da aplicação. Estas informações são acessadas em Firebase SDK snippet, ao final da página Configurações, acessada como segue a figura:
+ ![alt text](https://github.com/Beevi-Cognitive/PythonFireBaseAuthentication/blob/master/images/firebase6.png?raw=true)
+
+ - No mesmo diretório onde está sendo executado o notebook, crie um arquivo chamado .env, onde será colocada as credenciais obtidas do passo anterior. O conteúdo do arquivo deve ser da seguinte forma:
+
+apiKey="oconteudodeapikeyaqui"
+authDomain="oconteudodeauthaqui"
+databaseURL="oconteudodedatabaseaqui"
+projectId="oconteudodeprojectidaqui"
+storageBucket="oconteudodestoragebucketaqui"
+messagingSenderId="oconteudomessagingaqui"
+appId="oconteudodeappidaqui"
+measurementId="oconteudodemeasurementidaqui"
+
+chave="valor" (obtido de var firebaseConfig)
+
+# Rodar os comandos
+- Os blocos seguintes executam o cadastramento, o login e o reset do password. Executá-los e conferir o email recebido em seguida.
+
